@@ -1,0 +1,375 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--cor-principal:#2e7d32;
+--cor-secundaria:#4caf50;
+--fundo:#f4f7f4;
+--card:#ffffff;
+--texto:#222222;
+--texto-secundario:#555555;
+--sombra:0 4px 12px rgba(0,0,0,0.10);
+--raio:16px;
+}
+
+body{
+background:var(--fundo);
+color:var(--texto);
+font-family:Arial, Helvetica, sans-serif;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+header{
+background:var(--card);
+padding:1rem;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:1rem;
+box-shadow:var(--sombra);
+}
+
+.logo-area h1{
+color:var(--cor-principal);
+}
+
+.slogan{
+color:var(--texto-secundario);
+margin-top:5px;
+}
+
+.controles{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.controles button,
+.controles select{
+padding:10px;
+border:none;
+border-radius:10px;
+background:var(--cor-principal);
+color:white;
+cursor:pointer;
+}
+
+main{
+width:100%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+flex:1;
+}
+
+/* ========================= */
+/* TELAS */
+/* ========================= */
+
+.tela{
+display:none;
+}
+
+.tela.ativa{
+display:block;
+}
+
+/* ========================= */
+/* TELA INICIAL */
+/* ========================= */
+
+#telaInicial{
+text-align:center;
+}
+
+.imagemCapa{
+width:100%;
+max-width:900px;
+display:block;
+margin:0 auto 30px auto;
+border-radius:20px;
+box-shadow:var(--sombra);
+}
+
+#tituloJogo{
+color:var(--cor-principal);
+font-size:2.2rem;
+margin-bottom:15px;
+}
+
+#subtituloJogo{
+font-size:1.2rem;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+#descricaoJogo{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+#btnIniciar{
+background:var(--cor-principal);
+color:white;
+border:none;
+padding:15px 35px;
+border-radius:15px;
+font-size:1.1rem;
+cursor:pointer;
+transition:0.3s;
+}
+
+#btnIniciar:hover{
+background:var(--cor-secundaria);
+transform:translateY(-3px);
+}
+/* ========================= */
+/* INDICADORES */
+/* ========================= */
+
+.indicadores{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:30px;
+}
+
+.cardIndicador{
+background:var(--card);
+padding:20px;
+border-radius:var(--raio);
+box-shadow:var(--sombra);
+}
+
+.cardIndicador p{
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.barra{
+width:100%;
+height:18px;
+background:#d9d9d9;
+border-radius:50px;
+overflow:hidden;
+margin-bottom:10px;
+}
+
+.preenchimento{
+width:50%;
+height:100%;
+background:linear-gradient(
+90deg,
+var(--cor-principal),
+var(--cor-secundaria)
+);
+transition:0.5s;
+}
+
+#valorProducao,
+#valorAmbiente,
+#valorEconomia{
+font-weight:bold;
+color:var(--cor-principal);
+}
+/* ========================= */
+/* PERGUNTAS */
+/* ========================= */
+
+.perguntaContainer{
+background:var(--card);
+padding:30px;
+border-radius:var(--raio);
+box-shadow:var(--sombra);
+}
+
+.contadorPergunta{
+color:var(--texto-secundario);
+margin-bottom:15px;
+}
+
+#pergunta{
+line-height:1.8;
+margin-bottom:25px;
+}
+
+#alternativas{
+display:grid;
+gap:15px;
+}
+
+.opcao{
+width:100%;
+border:none;
+padding:18px;
+border-radius:15px;
+background:var(--cor-principal);
+color:white;
+cursor:pointer;
+font-size:1rem;
+transition:0.3s;
+}
+
+.opcao:hover{
+background:var(--cor-secundaria);
+transform:translateY(-2px);
+}
+/* ========================= */
+/* RESULTADO */
+/* ========================= */
+
+#telaResultado{
+text-align:center;
+}
+
+.resultadoImagem{
+width:100%;
+max-width:400px;
+margin:0 auto 25px auto;
+display:block;
+}
+
+#perfilFinal{
+color:var(--cor-principal);
+margin-bottom:15px;
+font-size:2rem;
+}
+
+#descricaoPerfil{
+max-width:800px;
+margin:auto;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.resultadoNumeros{
+display:grid;
+gap:10px;
+margin-bottom:30px;
+}
+
+.resultadoNumeros p{
+font-weight:bold;
+}
+
+#reiniciar{
+border:none;
+background:var(--cor-principal);
+color:white;
+padding:15px 30px;
+border-radius:15px;
+cursor:pointer;
+transition:.3s;
+}
+
+#reiniciar:hover{
+background:var(--cor-secundaria);
+}
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+background:var(--card);
+margin-top:40px;
+box-shadow:0 -2px 10px rgba(0,0,0,.08);
+}
+
+.footer-conteudo{
+max-width:1200px;
+margin:auto;
+padding:30px;
+text-align:center;
+}
+
+.footer-conteudo h3{
+color:var(--cor-principal);
+margin-bottom:10px;
+}
+
+.footer-conteudo p{
+color:var(--texto-secundario);
+margin-bottom:8px;
+}
+/* ========================= */
+/* MODO ESCURO */
+/* ========================= */
+
+body.dark{
+--fundo:#121212;
+--card:#1f1f1f;
+--texto:#f2f2f2;
+--texto-secundario:#cfcfcf;
+}
+
+body.dark .barra{
+background:#444;
+}
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+@media(max-width:768px){
+
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+.controles{
+    justify-content:center;
+}
+
+#tituloJogo{
+    font-size:1.8rem;
+}
+
+.perguntaContainer{
+    padding:20px;
+}
+
+.resultadoImagem{
+    max-width:300px;
+}
+
+
+}
+
+@media(max-width:480px){
+
+
+main{
+    padding:15px;
+}
+
+#btnIniciar{
+    width:100%;
+}
+
+.opcao{
+    font-size:.95rem;
+    padding:15px;
+}
+
+.controles{
+    width:100%;
+    justify-content:center;
+}
+
+.controles button,
+.controles select{
+    flex:1;
+    min-width:70px;
+}
+
+
+}

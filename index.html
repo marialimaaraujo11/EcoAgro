@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>EcoAgro - Agro Forte, Futuro Sustentável</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- CABEÇALHO -->
+
+<header>
+
+    <div class="logo-area">
+
+        <h1 id="tituloPrincipal">
+            EcoAgro
+        </h1>
+
+        <p class="slogan">
+            Cultivando decisões para um futuro sustentável
+        </p>
+
+    </div>
+
+    <div class="controles">
+
+        <button id="btnTema" title="Modo Claro/Escuro">
+            🌙
+        </button>
+
+        <button id="diminuirFonte" title="Diminuir Fonte">
+            A-
+        </button>
+
+        <button id="aumentarFonte" title="Aumentar Fonte">
+            A+
+        </button>
+
+        <button id="btnAudio" title="Ouvir Texto">
+            🔊
+        </button>
+
+        <select id="idioma">
+
+            <option value="pt">
+                Português
+            </option>
+
+            <option value="en">
+                English
+            </option>
+
+            <option value="es">
+                Español
+            </option>
+
+            <option value="fr">
+                Français
+            </option>
+
+            <option value="it">
+                Italiano
+            </option>
+
+        </select>
+
+    </div>
+
+</header>
+
+<!-- CONTEÚDO PRINCIPAL -->
+
+<main>
+
+    <!-- ================================= -->
+    <!-- TELA INICIAL -->
+    <!-- ================================= -->
+
+    <section id="telaInicial" class="tela ativa">
+
+        <!-- IMAGEM:
+        img/capa.jpg
+        -->
+
+        <img
+            src="img/capa.jpg"
+            alt="Agricultura sustentável"
+            class="imagemCapa"
+        >
+
+        <h2 id="tituloJogo">
+            Agro Forte, Futuro Sustentável
+        </h2>
+
+        <p id="subtituloJogo">
+            Equilíbrio entre Produção e Meio Ambiente
+        </p>
+
+        <p id="descricaoJogo">
+            Descubra como suas decisões podem influenciar
+            a produção agrícola, a economia e a preservação
+            ambiental.
+        </p>
+
+        <button id="btnIniciar">
+            Iniciar Simulação
+        </button>
+
+    </section>
+
+    <!-- ================================= -->
+    <!-- TELA DAS PERGUNTAS -->
+    <!-- ================================= -->
+
+    <section id="telaPerguntas" class="tela">
+
+        <div class="indicadores">
+
+            <div class="cardIndicador">
+
+                <p>🌾 Produção</p>
+
+                <div class="barra">
+                    <div
+                        id="barraProducao"
+                        class="preenchimento">
+                    </div>
+                </div>
+
+                <span id="valorProducao">
+                    50
+                </span>
+
+            </div>
+
+            <div class="cardIndicador">
+
+                <p>🌎 Meio Ambiente</p>
+
+                <div class="barra">
+                    <div
+                        id="barraAmbiente"
+                        class="preenchimento">
+                    </div>
+                </div>
+
+                <span id="valorAmbiente">
+                    50
+                </span>
+
+            </div>
+
+            <div class="cardIndicador">
+
+                <p>💰 Economia</p>
+
+                <div class="barra">
+                    <div
+                        id="barraEconomia"
+                        class="preenchimento">
+                    </div>
+                </div>
+
+                <span id="valorEconomia">
+                    50
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="perguntaContainer">
+
+            <div class="contadorPergunta">
+
+                Situação
+                <span id="numeroPergunta">
+                    1
+                </span>
+                de
+                <span id="totalPerguntas">
+                    8
+                </span>
+
+            </div>
+
+            <h2 id="pergunta">
+                Pergunta será carregada aqui.
+            </h2>
+
+            <div id="alternativas">
+
+                <!--
+                As alternativas serão criadas
+                automaticamente pelo JavaScript.
+                -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================================= -->
+    <!-- RESULTADO FINAL -->
+    <!-- ================================= -->
+
+    <section id="telaResultado" class="tela">
+
+        <!--
+        IMAGENS POSSÍVEIS:
+
+        img/guardiao-futuro.png
+        img/produtor-sustentavel.png
+        img/produtor-equilibrado.png
+        img/produtor-tradicional.png
+        img/produtor-risco.png
+        img/explorador-ambiental.png
+        -->
+
+        <img
+            id="imagemResultado"
+            src=""
+            alt="Resultado Final"
+            class="resultadoImagem"
+        >
+
+        <h2 id="perfilFinal">
+
+        </h2>
+
+        <p id="descricaoPerfil">
+
+        </p>
+
+        <div class="resultadoNumeros">
+
+            <p id="resultadoProducao">
+
+            </p>
+
+            <p id="resultadoAmbiente">
+
+            </p>
+
+            <p id="resultadoEconomia">
+
+            </p>
+
+        </div>
+
+        <button id="reiniciar">
+
+            Jogar Novamente
+
+        </button>
+
+    </section>
+
+</main>
+
+<!-- RODAPÉ -->
+
+<footer>
+
+    <div class="footer-conteudo">
+
+        <h3>
+            EcoAgro
+        </h3>
+
+        <p>
+            Agro Forte, Futuro Sustentável:
+            Equilíbrio entre Produção e Meio Ambiente
+        </p>
+
+        <p>
+            Projeto desenvolvido para o Concurso Agrinho 2026
+        </p>
+
+        <p>
+            © 2026
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>
